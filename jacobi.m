@@ -1,3 +1,10 @@
+% solucao exata = rref(matriz)
+% n = 3 -> 
+% a = matriz
+% b = 
+% toler = 0.14 -> precisao
+% IterMax = 2 -> quantas vezes vai rodar
+% [x, iter, CondErro] = jacobi(3, [3 1/4 -1/2;0 -2 3;2 3 5], [3; -6; -2], 0.14, 2)
 function [x, iter, CondErro] = jacobi(n, a, b, toler, IterMax)
 for i = 1: n
     r = 1 / a(i,i);
