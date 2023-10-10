@@ -1,4 +1,4 @@
-function [x0, f, d, toler, IterMax] = newton(x0, f, d, toler, IterMax)
+function [x0, f, d, toler, IterMax] = newtonraphson(x0, f, d, toler, IterMax)
   Fx = feval(f,x0);
   DFx = feval(d,x0);
   x = x0;
